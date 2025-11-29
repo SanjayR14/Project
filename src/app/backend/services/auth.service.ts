@@ -1,7 +1,7 @@
 // src/backend/services/auth.service.ts
 import { connectDB } from "../../../lib/db";
 import { User } from "../../../models/User";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { signToken } from "../../../lib/jwt";
 
 export const AuthService = {
